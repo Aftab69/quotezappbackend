@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require('cors');
 const app = express();
 app.use(express.json());
-app.use(cors({credentials: true, origin: true}));
+app.use(cors({credentials: true, origin: "https://quotezappfrontend.onrender.com"}));
 const dotenv = require("dotenv");
 dotenv.config({ path:"./config.env" });
 require("./Connection");
